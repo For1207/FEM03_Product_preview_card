@@ -1,0 +1,132 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+/* Desktop styles */
+
+.main {
+  width: 50%;
+  border-radius: 0.65rem;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 23rem;
+}
+
+.picture, .text {
+  width: 50%;
+}
+.picture {
+  background: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  border-radius: 0.65rem 0 0 0.65rem;
+}
+
+.text {
+  background-color: hsl(0, 0%, 100%);
+  padding: 0 1.7rem;
+  border-radius: 0 0.65rem 0.65rem 0;
+}
+
+.text h1, .text p, .prices, .cart-btn {
+  margin-top: 1rem;
+}
+
+.text h3, .text p, .discount {
+  color: hsl(228, 12%, 48%);
+}
+.text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: hsl(228, 12%, 48%);
+  margin-top: 1.8rem;
+}
+
+.text h1 {
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  padding-right: 1.5rem;
+}
+
+.text p {
+  font-size: 0.73rem;
+  line-height: 1.3rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+}
+
+.price, .discount {
+  width: 50%;
+}
+
+.price {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.discount {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  text-decoration: line-through;
+}
+
+.cart-btn {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0.7rem;
+  margin: 1.4rem 0.3rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-btn img {
+  width: 7%;
+}
+
+.cart-btn span {
+  padding-left: 0.4rem;
+}
+.footer p{
+  position: absolute;
+  bottom: 1%;
+  font-size: 0.7rem;
+  color:hsl(228, 12%, 48%);
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.footer a {
+  color: hsl(228, 12%, 48%);
+}
