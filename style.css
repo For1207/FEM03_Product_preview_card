@@ -22,18 +22,38 @@ body {
   overflow: hidden;
 }
 
-.perfume-img, .text {
+.hero-image, .text {
   width: 50%;
+}
+
+.hero-image {
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
 }
 
 .text {
   background-color: hsl(0, 0%, 100%);
-}
-.image-cont img {
-  width: 100%;
-  height: auto;
+  color: hsl(228, 12%, 48%);
+  padding: 1.4rem;
 }
 
+.text h3 {
+  font-family: Monserrat, Arial, sans-serif;
+  font-size:  0.53rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  
+}
+
+.text h1 {
+  font-family: Fraunces, serif ;
+  margin-top: 1.2rem;
+  color: hsl(212, 21%, 14%);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+
+}
 
 .footer {
   position: absolute;
