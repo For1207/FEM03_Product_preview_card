@@ -1,3 +1,4 @@
+/* General styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ body {
   background-color: hsl(30, 38%, 92%);
 }
 
+/* Desktop styles */
 
 .main {
   width: 40%;
@@ -37,8 +39,15 @@ body {
   padding: 1.4rem;
 }
 
-.text h3 {
+.text h3, .cart-btn, .footer p, .footer a {
   font-family: Monserrat, Arial, sans-serif;
+}
+
+.text h1, .prices .price {
+  font-family: Fraunces, serif;
+}
+
+.text h3 {
   font-size:  0.53rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -47,7 +56,6 @@ body {
 }
 
 .text h1 {
-  font-family: Fraunces;
   margin-top: 1.2rem;
   color: hsl(212, 21%, 14%);
   font-size: 1.4rem;
@@ -68,7 +76,6 @@ body {
 }
 
 .prices .price {
-  font-family: Fraunces, serif ;
   font-size: 1.4rem;
   color: hsl(158, 36%, 37%);
 }
@@ -82,9 +89,8 @@ body {
 .cart-btn {
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
-  font-family: Montserrat, sans-serif;
   text-align: center;
-  margin: 1.2rem 0.5rem 0 0.5rem;
+  margin-top: 1.2rem;
   padding: 0.5rem;
   border-radius: 0.35rem;
 }
@@ -97,9 +103,15 @@ body {
   width: 6%;
 }
 
+/* footer styles  */
 .footer {
   position: absolute;
   bottom: 1%;
   left: 50%;
   transform: translate(-50%);
+}
+
+.footer p, .footer a {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.7rem;
 }
