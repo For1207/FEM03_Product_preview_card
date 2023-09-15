@@ -47,12 +47,54 @@ body {
 }
 
 .text h1 {
-  font-family: Fraunces, serif ;
+  font-family: Fraunces;
   margin-top: 1.2rem;
   color: hsl(212, 21%, 14%);
   font-size: 1.4rem;
   line-height: 1.4rem;
+}
 
+.text p {
+  margin-top: 1.2rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-family: Montserrat, sans-serif;
+}
+
+.prices {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.prices .price {
+  font-family: Fraunces, serif ;
+  font-size: 1.4rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.prices .discount {
+  font-size: 0.7rem;
+  text-decoration: line-through;
+  margin-left: 1rem;
+}
+
+.cart-btn {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  margin: 1.2rem 0.5rem 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.35rem;
+}
+
+.cart-btn span {
+  font-size: 0.65rem;
+}
+
+.cart-btn img {
+  width: 6%;
 }
 
 .footer {
