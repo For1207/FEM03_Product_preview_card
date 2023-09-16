@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   font-size: 14px;
 }
 
@@ -13,105 +16,201 @@ body {
 /* Desktop styles */
 
 .main {
-  width: 40%;
-  min-width: 375px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 44%;
+  min-width: 350px;
+  margin: 50% auto;
+  transform: translate(0, -50%);
   display: flex;
-  border-radius: 0.65rem;
   overflow: hidden;
+  border-radius: 0.65rem;
+  aspect-ratio: 10/8;
 }
 
 .hero-image, .text {
   width: 50%;
 }
-
 .hero-image {
   background-image: url(./images/image-product-desktop.jpg);
+  background-position: center;
   background-size: cover;
 }
 
 .text {
   background-color: hsl(0, 0%, 100%);
-  color: hsl(228, 12%, 48%);
-  padding: 1.4rem;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around ;
 }
 
-.text h3, .cart-btn, .footer p, .footer a {
-  font-family: Monserrat, Arial, sans-serif;
+h3, p, span, a {
+  font-family: Montserrat, sans-serif;
+  color: hsl(228, 12%, 48%)
 }
 
-.text h1, .prices .price {
+h1, .price {
   font-family: Fraunces, serif;
 }
 
-.text h3 {
-  font-size:  0.53rem;
-  font-weight: 500;
+h3 {
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  font-weight: 400;
 }
 
-.text h1 {
-  margin-top: 1.2rem;
+h1 {
   color: hsl(212, 21%, 14%);
-  font-size: 1.4rem;
-  line-height: 1.4rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
-.text p {
-  margin-top: 1.2rem;
-  font-size: 0.7rem;
-  line-height: 1rem;
-  font-family: Montserrat, sans-serif;
+p {
+  line-height: 1.7rem;
 }
 
 .prices {
-  margin-top: 1.2rem;
   display: flex;
   align-items: center;
 }
 
-.prices .price {
-  font-size: 1.4rem;
+.price {
+  font-size: 2rem;
   color: hsl(158, 36%, 37%);
 }
 
-.prices .discount {
-  font-size: 0.7rem;
+.discount {
+  margin-left: 10%;
   text-decoration: line-through;
-  margin-left: 1rem;
 }
 
 .cart-btn {
   background-color: hsl(158, 36%, 37%);
-  color: hsl(0, 0%, 100%);
+  border-radius: 0.4rem;
   text-align: center;
-  margin-top: 1.2rem;
-  padding: 0.5rem;
-  border-radius: 0.35rem;
+  width: 100%;
+  padding: 0.9rem
 }
 
 .cart-btn span {
-  font-size: 0.65rem;
+  color: hsl(0, 0%, 100%);
+  margin-left: 5%;
 }
 
-.cart-btn img {
-  width: 6%;
+.cart-btn:hover {
+  background-color: hsl(158, 36%, 18%);
+  cursor: pointer;
 }
 
-/* footer styles  */
-.footer {
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  transform: translate(-50%);
+.footer p{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
-.footer p, .footer a {
-  color: hsl(228, 12%, 48%);
-  font-size: 0.7rem;
+/* Responsive styles */
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 11px;
+  }
+
+  .cart-btn img {
+    width: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 9px;
+  }
+
+  .cart-btn img {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+  .main {
+    display: block;
+    width: 90%;
+    overflow: visible;
+    transform: none;
+  }
+
+  .hero-image, .text {
+    width: 100%;
+  }
+
+
+  .hero-image {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    aspect-ratio: 10/9;
+    border-radius: 0.65rem 0.65rem 0 0;
+  }
+
+  .text {
+    border-radius: 0 0 0.65rem 0.65rem }
+
+  .cart-btn img {
+    width: 10%;
+  }
+
+  h3 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  .prices {
+    margin-top: 1rem;
+  }
+
+  .price {
+    font-size: 2.2rem;
+  }
+
+  .cart-btn {
+    margin-top: 1rem;
+  }
+
+  .cart-btn img {
+    width: 6%;
+  }
+
+  .cart-btn {
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
 }
